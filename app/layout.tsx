@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import ActiveS(tatus from './components/ActiveStatus'
+import AuthContext from './context/authContext'
 import ToasterContext from './context/ToasterContext'
 import './globals.css'
 
@@ -18,8 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <AuthContext>
         <ToasterContext/>
+        <ActiveStatus />
         {children}
+        </AuthContext>
         </body>
     </html>
   )
