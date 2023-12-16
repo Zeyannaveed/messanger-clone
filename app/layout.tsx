@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import ActiveS(tatus from './components/ActiveStatus'
+import ActiveStatus from './components/ActiveStatus'
 import AuthContext from './context/authContext'
 import ToasterContext from './context/ToasterContext'
 import './globals.css'
